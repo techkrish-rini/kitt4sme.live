@@ -15,7 +15,7 @@ data:
   # you also change the Istio ingress route.
   # Overrides the default of
   # - https://kitt4sme.collab-cloud.eu/argocd
-  argocd.webapp: http://192.168.1.25/argocd
+  argocd.webapp: http://192.168.1.28/argocd
 
   # OIDC config. You only need this if you've configured Argo CD to do
   # SSO with Keycloak. The only thing you should change in the block

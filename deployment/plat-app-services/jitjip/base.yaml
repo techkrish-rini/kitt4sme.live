@@ -1,0 +1,36 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: jitjip
+  name: jitjip
+spec:
+  ports:
+  - name: http
+    port: 9000
+  selector:
+    app: jitjip
+
+---
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jitjip
+spec:
+  selector:
+    matchLabels:
+      app: jitjip
+  template:
+    spec:
+      containers:
+        - image: "techkrish/jitjip:latest"
+          imagePullPolicy: IfNotPresent
+          name: jitjip
+          ports:
+          - containerPort: 9000
+            name: http
+          env:
+          - name: "ORION_BASE_URL"
+            value: "http://orion:1026"
+
