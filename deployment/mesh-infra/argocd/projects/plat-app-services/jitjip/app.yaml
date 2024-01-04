@@ -1,0 +1,10 @@
+- op: replace
+  path: /metadata/name
+  value: jitjip
+- op: replace
+  path: /spec/source/path
+  value: deployment/plat-app-services/jitjip
+- op: replace
+  path: /spec/project
+  value: plat-app-services
+
