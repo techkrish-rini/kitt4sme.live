@@ -109,4 +109,3 @@ get stuff done:
 [storage]: ./docs/storage.md
 [wp6.trials]: ./docs/wp6-field-trials/README.md
 
-this is a test
