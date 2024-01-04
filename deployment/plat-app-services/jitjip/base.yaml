@@ -24,7 +24,7 @@ spec:
   template:
     spec:
       containers:
-        - image: "techkrish/jitjip:latest"
+        - image: "ghcr.io/techkrish-rini/jitjip:latest"
           imagePullPolicy: IfNotPresent
           name: jitjip
           ports:
